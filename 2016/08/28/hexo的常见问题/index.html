@@ -210,8 +210,8 @@
 <h3 id="1-ERROR-Deployer-not-found-git-或者-ERROR-Deployer-not-found-github"><a href="#1-ERROR-Deployer-not-found-git-或者-ERROR-Deployer-not-found-github" class="headerlink" title="1.ERROR Deployer not found: git 或者 ERROR Deployer not found: github"></a>1.ERROR Deployer not found: git 或者 ERROR Deployer not found: github</h3><p>　　解决方法：</p>
 <pre><code>npm install hexo-deployer-git --save
 </code></pre><p>　　如发生报错： ERROR Process failed: layout/.DS_Store?, 那么进入主题里面layout和_partial目录下，使用删除命令：</p>
-<p>　　rm-rf.DS_Store</p>
-<h3 id="2-发现将博客目录下整个都上传到了github"><a href="#2-发现将博客目录下整个都上传到了github" class="headerlink" title="2.发现将博客目录下整个都上传到了github"></a>2.发现将博客目录下整个都上传到了github</h3><p>　　解决方法：请将博客目录下的.git文件删除 </p>
+<pre><code>rm-rf.DS_Store
+</code></pre><h3 id="2-发现将博客目录下整个都上传到了github"><a href="#2-发现将博客目录下整个都上传到了github" class="headerlink" title="2.发现将博客目录下整个都上传到了github"></a>2.发现将博客目录下整个都上传到了github</h3><p>　　解决方法：请将博客目录下的.git文件删除 </p>
 <p>　　发生这种问题是因为你在博客目录下使用了git init命令</p>
 <h3 id="3-出现Time-out-443错误"><a href="#3-出现Time-out-443错误" class="headerlink" title="3.出现Time out 443错误"></a>3.出现Time out 443错误</h3><p>　　解决方法：请不要使用https方法，在后续的git版本和hexo版本中，会有很多不确定性因素的产生，请尽量用ssh方法，简单可靠，何乐而不为~</p>
 <p>　　以后出现的包括repo问题之类的大多都与这个有关。</p>
