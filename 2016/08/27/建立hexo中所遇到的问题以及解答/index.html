@@ -206,56 +206,49 @@
             </div>
         </div>
         <div class="col-md-8 col-md-offset-2">
-      		<p></p><h2>hexo环境搭建<h2><p></p>
-<p></p><h3>安装Git<h3><p></p>
+      		<h2 id="hexo环境搭建"><a href="#hexo环境搭建" class="headerlink" title="hexo环境搭建"></a>hexo环境搭建</h2><p>1.安装Git</p>
+<p>2.安装Node.Js</p>
+<p>　　<a href="https://nodejs.org/en/" target="_blank">Node官网</a></p>
+<p>3.安装Hexo</p>
+<p>　　<a href="https://hexo.io/" target="_blank">Hexo官网</a></p>
+<p>　　打开终端，输入npm install -g hexo-cli ，静静等待安装完毕。（失败在命令前加sudo 或以管理员身份运行cmd ）</p>
+<p>4.创建Hexo目录</p>
+<p>　　找一个方便的地方创建一个文件夹，假设命名为blog</p>
+<p>　　(注:你以后的博客操作都在这个文件夹内，尽量全英文路径，避免不必要的问题，建议你创建这个文件夹的快捷方式到桌面，方便操作)</p>
+<p>　　用cd 命令进入 刚刚创建的blog 目录，输入 </p>
+<pre><code>hexo init
+</code></pre><p>　　等待完成后输入 </p>
+<pre><code>npm install
+</code></pre><p>　　等待完成后输入 </p>
+<pre><code>npm install hexo-server （失败在命令前加sudo 或以管理员身份运行cmd ）
+</code></pre><p>　　等待完成后输入 </p>
+<pre><code>npm install hexo-deployer-git --save
+</code></pre><p>　　站点地图插件：</p>
+<pre><code>npm install hexo-generator-sitemap --save
+
+npm install hexo-generator-baidu-sitemap --save
+</code></pre><p>　　至此，hexo环境就已经搭建好了</p>
 <p><br></p>
-<ol>
-<li>安装Node.Js</li>
-</ol>
-<p><a href="https://nodejs.org/en/Node.Js" target="_blank" rel="" external="">Node官网</a></p>
-<ol>
-<li>安装Hexo</li>
-</ol>
-<p><a href="https://hexo.io/" target="_blank" rel="" external="">Hexo官网</a></p>
-<p>打开终端，输入npm install -g hexo-cli ，静静等待安装完毕。（失败在命令前加sudo 或以管理员身份运行cmd ）</p>
-<ol>
-<li>创建Hexo目录</li>
-</ol>
-<p>找一个方便的地方创建一个文件夹，假设命名为blog</p>
-<p>(注:你以后的博客操作都在这个文件夹内，尽量全英文路径，避免不必要的问题，建议你创建这个文件夹的快捷方式到桌面，方便操作)</p>
-<p>用cd 命令进入 刚刚创建的blog 目录，输入 hexo init</p>
-<p>等待完成后输入 npm install</p>
-<p>等待完成后输入 npm install hexo-server （失败在命令前加sudo 或以管理员身份运行cmd ）</p>
-<p>等待完成后输入 npm install hexo-deployer-git –save</p>
-<p><br></p>
-<p>站点地图插件：</p>
-<p>npm install hexo-generator-sitemap –save</p>
-<p>npm install hexo-generator-baidu-sitemap –save</p>
-<p>至此，hexo环境就已经搭建好了</p>
-<p><br></p>
-<p>创建Github仓库</p>
-<p>hexo建博客，不一定要Github，但是一般部署在Github上，这里就以Github为例。</p>
-<p>建议你安装Github desktop软件，这样你登录Github desktop会自动生成ssh keys，很方便。</p>
-<p>如果不愿意安装Github，那么需要生成ssh keys，请参考 Git-生成-SSH-公钥 （这个很重要）</p>
-<p><br></p>
-<p>登录Github网页，点击settings ，查看 ssh keys是否生成。</p>
-<p><br></p>
-<p>测试ssh，$ ssh -T git@github.com ，如果不成功，回到第2步或第3步。</p>
-<p><br></p>
-<p>查看用户信息</p>
-<p><br></p>
-<p>git config –list</p>
-<p>回到Github首页，点击”New repository”，新建一个库。</p>
-<p>输入Repository name: yourname.github.io (yourname与你的注册用户名一致,这个就是你博客的域名了，一定要连后面github.io输入完整) ，其它设置默认，创建。</p>
-<p>点击刚刚的库，找到Setting ，进入设置，点击Launch automatic page generator ，点击底部的Continue to layouts</p>
-<p>随意选择一个主题，最后点击Publish page ，发布github默认生成的一个静态站点 。</p>
-<p>至此，Github上的操作就完成了。</p>
-<p></p><h2>博客配置<h2><p></p>
-<p>进入本地的blog 文件夹，这里简述重要文件(夹)的作用。</p>
-<p>文件名        作用<br>_config.yml    ———    配置文件<br>source    ———    博客的文章<br>themes    ———    主题</p>
-<p>博客的配置，就是配置_config.yml 文件，用编辑器打开。</p>
-<p>（注意：本文件的配置，冒号后面的空格不可删除，比如title: 博客名字，这里冒号后面有一个空格，如果没有空格会报错）</p>
-<p>以下是需要配置的，其余默认即可。</p>
+<h3 id="创建Github仓库"><a href="#创建Github仓库" class="headerlink" title="创建Github仓库"></a>创建Github仓库</h3><p>　　hexo建博客，不一定要Github，但是一般部署在Github上，这里就以Github为例。</p>
+<p>　　建议你安装Github desktop软件，这样你登录Github desktop会自动生成ssh keys，很方便。</p>
+<p>　　如果不愿意安装Github，那么需要生成ssh keys，请参考 Git-生成-SSH-公钥 （这个很重要）</p>
+<p>　　登录Github网页，点击settings ，查看 ssh keys是否生成。</p>
+<p>　　测试ssh，$ ssh -T git@github.com ，如果不成功，回到第2步或第3步。</p>
+<h3 id="查看用户信息"><a href="#查看用户信息" class="headerlink" title="查看用户信息"></a>查看用户信息</h3><p><br></p>
+<pre><code>git config --list
+</code></pre><p>　　回到Github首页，点击”New repository”，新建一个库。</p>
+<p>　　输入Repository name: yourname.github.io (yourname与你的注册用户名一致,这个就是你博客的域名了，一定要连后面github.io输入完整) ，其它设置默认，创建。</p>
+<p>　　点击刚刚的库，找到Setting ，进入设置，点击Launch automatic page generator ，点击底部的Continue to layouts</p>
+<p>　　随意选择一个主题，最后点击Publish page ，发布github默认生成的一个静态站点 。</p>
+<p>　　至此，Github上的操作就完成了。</p>
+<h3 id="博客配置"><a href="#博客配置" class="headerlink" title="博客配置"></a>博客配置</h3><p>　　进入本地的blog 文件夹，这里简述重要文件(夹)的作用。</p>
+<pre><code>文件名        作用
+_config.yml    ———    配置文件
+source    ———    博客的文章
+themes    ———    主题
+</code></pre><p>　　博客的配置，就是配置_config.yml 文件，用编辑器打开。</p>
+<p>　　（注意：本文件的配置，冒号后面的空格不可删除，比如title: 博客名字，这里冒号后面有一个空格，如果没有空格会报错）</p>
+<p>　　以下是需要配置的，其余默认即可。</p>
 <pre><code>title: 博客名字
 subtitle: 副标题
 description: 博客描述
@@ -282,14 +275,11 @@ theme: 主题名字(在themes文件夹下面的文件夹名)
 （下面的2个yourname换成你的Github用户名，其余不变）
 deploy:
   type: git
-  repository: https://github.com/yourname/yourname.github.io
+  repository: https://github.com/yourname/yourname.github.io /*git@github.com:varShears/varShears.github.io.git我十分推荐使用这种写法 会省去很多http和https的一些bug*/
   branch: master
-</code></pre><p></p><h2>应用主题<h2><p></p>
-<p>自己写主题或者下载主题到 blog &gt; themes 文件夹下，主题是一个文件夹，假设名字为 name , 将 blog 下面的 _config.yml 文件里面的theme: 后面写name 即可应用主题。<br>一般主题文件夹里面还会有一个_config.yml 文件，这是主题的配置，如何配置请阅读各主题的 README.md 。</p>
-<p></p><h2>绑定域名<h2><p></p>
-<p>假设你的域名为 blog.abc.com ,新建一个名为 CNAME 的文件，内容为 blog.abc.com ，不要有任何文件后缀 。放到 blog &gt; source 下面，以后不要删除。<br>然后到你的DNS解析处，新建 CNAME 解析，主机记录为blog ,记录值为 yourname.github.io 。解析生效后可以通过 blog.abc.com 访问你的博客了。</p>
-<p></p><h2>写博客<h2><p></p>
-<p>进入，blog &gt; source &gt; _posts ，创建 .md 的文件，你的所有文章都将放在这个文件夹下，并且都为.md （或者 .html） 文件。</p>
+</code></pre><h3 id="应用主题"><a href="#应用主题" class="headerlink" title="应用主题"></a>应用主题</h3><p>　　自己写主题或者下载主题到 blog &gt; themes 文件夹下，主题是一个文件夹，假设名字为 name , 将 blog 下面的 _config.yml 文件里面的theme: 后面写name 即可应用主题。<br>　　一般主题文件夹里面还会有一个_config.yml 文件，这是主题的配置，如何配置请阅读各主题的 README.md 。</p>
+<h3 id="绑定域名"><a href="#绑定域名" class="headerlink" title="绑定域名"></a>绑定域名</h3><p>　　假设你的域名为 blog.abc.com ,新建一个名为 CNAME 的文件，内容为 blog.abc.com ，不要有任何文件后缀 。放到 blog &gt; source 下面，以后不要删除。<br>　　然后到你的DNS解析处，新建 CNAME 解析，主机记录为blog ,记录值为 yourname.github.io 。解析生效后可以通过 blog.abc.com 访问你的博客了。</p>
+<h3 id="写博客"><a href="#写博客" class="headerlink" title="写博客"></a>写博客</h3><p>　　进入，blog &gt; source &gt; _posts ，创建 .md 的文件，你的所有文章都将放在这个文件夹下，并且都为.md （或者 .html） 文件。</p>
 <pre><code>id: 文章ID (可选)
 
 title: 博客标题
@@ -305,20 +295,16 @@ tags: 标签(多标签)
 --- (分割线必不可少)
 
     博客正文
-</code></pre><p>更多：</p>
-<p>写博客需要遵循Markdown语法，Markdown兼容部分html语法。Markdown语法有不同的标准，常用的是GitHub标准(GitHub Flavored Markdown)，简称 GFM<br>用<a id="more"></a> 表示截断，前面的内容会变成预览<br>用<br> 增加换行</p>
-<p></p><h2>部署博客<h2><p></p>
-<p>每次写完博客把文件扔到_posts文件夹里面，就该部署了，很容易的四条命令。</p>
-<p>首先打开终端（cmd），cd到blog 文件夹（注意：cd到 blog 即可）</p>
-<p>hexo g 在本地生成静态页面<br>hexo s 本地预览（默认端口4000，复制 <a href="http://0.0.0.0:4000" target="_blank" rel="external">http://0.0.0.0:4000</a> （或<a href="http://localhost:4000）到浏览器可以预览效果，" target="_blank" rel="external">http://localhost:4000）到浏览器可以预览效果，</a> Ctrl + c 关闭server）<br>hexo clean 清理缓存<br>到这里你还可以修改，最后一步</p>
-<p>hexo d 部署，完成<br>注意：</p>
-<p>每次hexo d 之前，必须 hexo g 。这两个是写完博客之后必须用的命令。<br>每次 hexo s 之前，也必须 hexo g 。<br>hexo clean 和 hexo s 是可选命令。</p>
-<p></p><h2>更新博客<h2><p></p>
-<p>写完Markdown，扔_posts 里面，打开终端，cd到blog ， hexo g ，hexo d 。</p>
+</code></pre><p>　　更多：</p>
+<p>　　写博客需要遵循Markdown语法，Markdown兼容部分html语法。Markdown语法有不同的标准，常用的是GitHub标准(GitHub Flavored Markdown)，简称 GFM<br>　　用&lt;!&ndash;&ndash;more&ndash;&ndash;&gt;  表示截断，前面的内容会变成预览<br>　　用&lt;br&gt; 增加换行</p>
+<h3 id="部署博客"><a href="#部署博客" class="headerlink" title="部署博客"></a>部署博客</h3><p>　　每次写完博客把文件扔到_posts文件夹里面，就该部署了，很容易的四条命令。</p>
+<p>　　首先打开终端（cmd），cd到blog 文件夹（注意：cd到 blog 即可）</p>
+<p>　　hexo g 在本地生成静态页面<br>　　hexo s 本地预览（默认端口4000，复制 <a href="http://0.0.0.0:4000" target="_blank" rel="external">http://0.0.0.0:4000</a> （或<a href="http://localhost:4000）到浏览器可以预览效果，" target="_blank" rel="external">http://localhost:4000）到浏览器可以预览效果，</a> Ctrl + c 关闭server）<br>　　hexo clean 清理缓存<br>　　到这里你还可以修改，最后一步</p>
+<p>　　hexo d 部署，完成<br>　　注意：</p>
+<p>　　每次hexo d 之前，必须 hexo g 。这两个是写完博客之后必须用的命令。<br>　　每次 hexo s 之前，也必须 hexo g 。<br>　　hexo clean 和 hexo s 是可选命令。</p>
+<h3 id="更新博客"><a href="#更新博客" class="headerlink" title="更新博客"></a>更新博客</h3><p>　　写完Markdown，扔_posts 里面，打开终端，cd到blog ， hexo g ，hexo d 。</p>
 <p>略略略~</p>
-<p>Enjoy it~</p>
-<p>????</p>
-</h2></h2></h2></h2></h2></h2></h2></h2></h2></h2></h2></h2></h3></h3></h2></h2>
+
             <div class="clearfix"></div>
             <hr class="nogutter">
         </div>
