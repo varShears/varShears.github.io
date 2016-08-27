@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>Archives | Shears</title>
+  <title>Shears</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -84,7 +84,7 @@
 </head>
 
 <!--
-<body class="home-template">
+<body class="post-template">
 -->
 <body id="index" class="lightnav animsition">
 
@@ -191,87 +191,62 @@
         <!-- ============================ Header & Logo bar =========================== -->
 
 
-      <!-- ============================ Hero Image =========================== -->
-
-<section id="hero" class="scrollme">
-    <div class="container-fluid element-img" style="background: url(/img/bg_img.jpg) no-repeat center center fixed;background-size: cover">
-        <div class="row">
-            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 vertical-align cover boost text-center">
-                <div class="center-me animateme" data-when="exit" data-from="0" data-to="0.6" data-opacity="0" data-translatey="100">
-                    <div>
-                        
-                        <h2>YOU'VE MADE A <span>BRAVE</span> DECISION, WELCOME.</h2>
-                        <p></p>
-                        
-                        <h2></h2>
-                        <p>每一个不曾起舞的日子都是对生命的辜负。</p>
-                        
-
-                    </div>
-                </div>
-            </div>
-            <!-- // .col-md-12 -->
-        </div>
-        <div class="herofade beige-dk"></div>
-    </div>
-</section>
-
-<!-- Height spacing helper -->
-<div class="heightblock"></div>
-<!-- // End height spacing helper -->
-
-<!-- ============================ END Hero Image =========================== -->
-
-
-
-
-<section id="services">
+      
+<section id="intro">
     <div class="container">
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                <div class="row boxes">
-                    
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/2016/08/28/hexo的常见问题/"></a></h4>
-                            
-                            <p><time datetime="2016-08-27T16:05:16.263Z"><a href="/2016/08/28/hexo的常见问题/">2016-08-28</a></time></p>
-                        </div>
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/2016/08/27/建立hexo中所遇到的问题以及解答/">建立hexo中所遇到的问题以及解答</a></h4>
-                            
-                            <p><time datetime="2016-08-27T08:24:37.978Z"><a href="/2016/08/27/建立hexo中所遇到的问题以及解答/">2016-08-27</a></time></p>
-                        </div>
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/2016/08/21/hello-world/">Hello World</a></h4>
-                            
-                            <p><time datetime="2016-08-21T07:31:21.584Z"><a href="/2016/08/21/hello-world/">2016-08-21</a></time></p>
-                        </div>
-                    
-                </div>
-            </div>    
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
+      <time datetime="2016-08-27T16:05:16.263Z" itemprop="datePublished">
+          2016-08-28
+      </time>
+    
+</span>
+                <h1></h1>
+            </div>
         </div>
-    </div>
-</section> 
+        <div class="col-md-8 col-md-offset-2">
+      		<p>�������������ܽ���һ���Ҵblog�����������������⣬�������ܻ��в��䡣</p>
+<h1 id="1-ERROR-Deployer-not-found-git-����-ERROR-Deployer-not-found-github"><a href="#1-ERROR-Deployer-not-found-git-����-ERROR-Deployer-not-found-github" class="headerlink" title="1.ERROR Deployer not found: git ���� ERROR Deployer not found: github"></a>1.ERROR Deployer not found: git ���� ERROR Deployer not found: github</h1><p>��������������</p>
+<pre><code>npm install hexo-deployer-git --save
+</code></pre><p>�����緢�������� ERROR Process failed: layout/.DS_Store?, ��ô������������layout��_partialĿ¼�£�ʹ��ɾ�����</p>
+<p>����rm-rf.DS_Store</p>
+<h1 id="2-���ֽ�����L¼���������ϴ�����github"><a href="#2-���ֽ�����L¼���������ϴ�����github" class="headerlink" title="2.���ֽ�����Ŀ¼���������ϴ�����github"></a>2.���ֽ�����Ŀ¼���������ϴ�����github</h1><p>���������������뽫����Ŀ¼�µ�.git�ļ�ɾ�� </p>
+<p>��������������������Ϊ���ڲ���Ŀ¼��ʹ����git init����</p>
+<h1 id="3-����Time-out-443����"><a href="#3-����Time-out-443����" class="headerlink" title="3.����Time out 443����"></a>3.����Time out 443����</h1><p>���������������벻Ҫʹ��https�������ں�����git�汾��hexo�汾�У����кܶ಻ȷ�������صĲ������뾡����ssh�������򵥿ɿ������ֶ���Ϊ~</p>
+<p>�����Ժ����ֵİ���repo����֮���Ĵ��඼�������йء�</p>
+<h1 id="4-Hexo�����ϴ�����ʾ����"><a href="#4-Hexo�����ϴ�����ʾ����" class="headerlink" title="4.Hexo�����ϴ�����ʾ����"></a>4.Hexo�����ϴ�����ʾ����</h1><p>������������������utf-8�ı�����ʽ����</p>
 
-<section id="statement">
-    <div class="container text-center wow fadeInUp" data-wow-delay="0.5s">
-        <div class="row">
-            <p>虽然还没想好写点什么，但是总觉得这里放句话比较和谐。</p>
+            <div class="clearfix"></div>
+            <hr class="nogutter">
         </div>
+        <nav class="pagination" role="pagination">
+    
+    
+    <a class="pull-right" href="/2016/08/27/建立hexo中所遇到的问题以及解答/">
+        建立hexo中所遇到的问题以及解答 →
+    </a>
+    
+</nav>
+
+        <div class="duoshuo">
+<div class="ds-thread" data-thread-key="2016/08/28/hexo的常见问题/" data-title="" data-url="http://yoursite.com/2016/08/28/hexo的常见问题/"></div>
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"duoshuo_name"};
+(function() {
+	var ds = document.createElement('script');
+	ds.type = 'text/javascript';ds.async = true;
+	ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+	ds.charset = 'UTF-8';
+	(document.getElementsByTagName('head')[0] 
+	 || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+</script>
+</div>
     </div>
 </section>
+
+
       
 <!-- ============================ Footer =========================== -->
 
