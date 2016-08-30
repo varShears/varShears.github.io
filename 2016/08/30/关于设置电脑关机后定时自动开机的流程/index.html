@@ -195,18 +195,29 @@
         <div class="col-md-8 col-md-offset-2">
       		<p>　　在BIOS里设置有一项电源设置可以设定定时开机。 </p>
 <p>　　通过CMOS设置实现定时开机的设置过程如下：</p>
-<p>　　　　*   首先进入“CMOS SETUP”程序(大多数主板是在计算机启动时按DEL键进入)；</p>
-<p>　　　　*   然后将光条移到“Power Management Setup”选项上，回车进入其子菜单；</p>
-<p>　　　　*   再将“Resume by Alarm”项设置成“Enabled”，并在“Date(of Month)Alarm”项中设置每月开机日期(0表示每天，1表示每月1日，2表示每月2日，……)，在“Time(hh:mm:ss)Alarm”项中设置开机时间；</p>
-<p>　　　　*   最后保存设置，重新启动，当关闭计算机后，你的计算机将在你规定的时刻自动启动。 </p>
+<blockquote>
+<ul>
+<li>首先进入“CMOS SETUP”程序(大多数主板是在计算机启动时按DEL键进入)；</li>
+</ul>
+<ul>
+<li>然后将光条移到“Power Management Setup”选项上，回车进入其子菜单；</li>
+</ul>
+<ul>
+<li>再将“Resume by Alarm”项设置成“Enabled”，并在“Date(of Month)Alarm”项中设置每月开机日期(0表示每天，1表示每月1日，2表示每月2日，……)，在“Time(hh:mm:ss)Alarm”项中设置开机时间；</li>
+</ul>
+<ul>
+<li>最后保存设置，重新启动，当关闭计算机后，你的计算机将在你规定的时刻自动启动。 </li>
+</ul>
+</blockquote>
 <p>　　<strong>注意：1.计算机主板必须有“Resume by Alarm”功能才能实现定时开机；2.要实现定时正常开机，必须取消开机Password功能；3.最关键的一点是要接通主机电源。</strong> </p>
 <p>　　在启动计算机时，按“Delete”键进入BIOS接口。 </p>
 <p>　　在BIOS设定主接口中选择“Power Management Setup”菜单，进入电源管理窗口。 </p>
 <p>　　默认情况下，“Automatic Power Up(定时开机，有些机器选项为Resume By Alarm)”选项是关闭的，将光标移到该项，用PageUp或PageDown翻页键将“Disabled”改为“Enabled”，而后在“Date (of Month) Alarm”和“Time (hh:mm:ss) Alarm”中分别设定开机的日期和时间。 </p>
-<p>　　如果“Date”设为0，则默认为每天定时开机。 </p>
+<p>　　<strong>如果“Date”设为0，则默认为每天定时开机。</strong></p>
 <p>　　设定好后按“ESC”键回到BIOS设定主接口，点击“Save Exit Setup”，按“Y”键保存CMOS设定退出，接着机器会重新启动，这时便大功告成了。当然，值得注意的是定时开机需要您的主板支持才行，不过现在大多数主板都有这项功能。 </p>
 <p>　　另外，不同的主板在设定上会不尽相同，不过都大同小异。 </p>
-<p>　　PS:Windows自动定时关机 </p>
+<p><br></p>
+<p>　　<strong>PS:Windows自动定时关机</strong></p>
 <p>　　单击“开始”按钮，在“开始”菜单中选择“程序”选项，在“程序集”中选择“附属应用程序”，再在“附属应用程序”中选择“系统工具”，在“系统工具”中选择“计划任务”命令，这时就打开了“计划任务”窗口，在该窗口中，点击“新增已计划的任务”进入“计划任务”向导。 </p>
 <p>　　按照提示点击“下一步”后，再点击“浏览”按钮，找到“C:WindowsRundll32.exe”打开，然后根据自己的需求设定任务执行的方式，如每天或每周。最后设定好这个任务开始的时间和开始的日期，点击“完成”按钮就会在计划任务窗口出现“Rundll32”这个计划任务名。 </p>
 <p>　　这个计划任务还需要进行属性的修改设定，在计划任务窗口，双击“Rundll32”打开属性窗口，在“执行”栏中把原有的内容修改为:C:WINDOWSRundll32.exe user.exe,exitwindows。注意user.exe和exitwindows之间的“，”必须为英文半角，且其前后不能有“空格”。 </p>
