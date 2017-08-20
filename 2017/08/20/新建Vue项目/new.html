@@ -1,0 +1,51 @@
+#How to install a Vue project
+##1. Install Node.js
+<br>
+##2. Install Vue
+``` 
+npm install vue //npm安装Vue 
+
+npm install -g vue-cli //npm 安装Vue脚手架vue-cli
+```
+if you can get the Vue's version by command ` vue --version `
+
+Then cd to a direct that you use this to establish your project
+
+cd to your project direction
+
+##Create your project
+
+``` 
+vue init webpack my-project //安装你的项目
+
+vue init webpack <your project name> //设定你的项目名称
+
+```
+The next , you can press your "enter" button to create your project or you can use your personal options to create a project that you want to create
+
+then `npm install` in your project direction
+
+if you find that cmd put a error message 
+```
+···
+phantomjs-prebuilt@2.1.15 install: node install.js` npm err! 
+exit status 1
+···
+```
+Then you need to use this commond 
+```
+npm install phantomjs-prebuilt@2.1.14 --ignore-scripts  
+```
+or use
+```
+npm update -g 
+```
+finally,
+```
+cnpm install vue-router --save //安装你的vue-roter插件
+
+npm run dev //启动
+```
+From 
+[vue2.0环境安装](http://www.cnblogs.com/zhihou/p/6422704.html)
+[Vue2.0 新手完全填坑攻略—从环境搭建到发布](http://www.open-open.com/lib/view/open1476240930270.html)

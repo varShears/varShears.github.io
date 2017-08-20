@@ -1,0 +1,48 @@
+#如何去新建一个Vue的项目
+##1. 安装node.js
+<br>
+##2. 安装Vue
+``` 
+npm install vue //npm安装Vue 
+
+npm install -g vue-cli //npm 安装Vue脚手架vue-cli
+```
+如果你能通过vue --version 这个命令来获取vue版本号，则进行下一步，否则请将vue配置到nodejs/node_global这一级
+
+然后请通过cd命令进入到你要安装vue项目的目录
+
+##创建项目
+
+``` 
+vue init webpack my-project //安装你的项目
+
+vue init webpack <your project name> //设定你的项目名称
+
+```
+在接下来的操作里，你可以通过一路回车来省略安装步骤，或者自己配置相应的设置
+
+然后，使用命令`npm install`在你的项目下进行创建
+
+如果你发现cmd下出现以下错误代码 
+```
+···
+phantomjs-prebuilt@2.1.15 install: node install.js` npm err! 
+exit status 1
+···
+```
+则说明你需要运行以下命令来进行安装（具体什么坑不知道）
+```
+npm install phantomjs-prebuilt@2.1.14 --ignore-scripts  
+```
+或者在其他错误下请更新自己的npm配置
+```
+npm update -g 
+```
+最后,请运行以下命令，来确认你的项目已经创建完毕。
+```
+cnpm install vue-router --save //安装你的vue-roter插件
+
+npm run dev //启动
+```
+文本来自[vue2.0环境安装](http://www.cnblogs.com/zhihou/p/6422704.html)
+[Vue2.0 新手完全填坑攻略—从环境搭建到发布](http://www.open-open.com/lib/view/open1476240930270.html)
